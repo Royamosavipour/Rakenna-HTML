@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./layout.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <footer></footer>
+
+
+    <script>
+        const body = document.querySelector('body')
+        const header = document.createElement('header')
+        header.className = 'ylatunniste'
+        body.appendChild(header)
+
+        const h1 = document.createElement('h1')
+        h1.innerHTML = 'Tämä on artikkein otsikko'
+        header.appendChild(h1)
+
+        const p = document.createElement('p')
+        p.innerHTML = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad natus, voluptate nam blanditiis praesentium laboriosam nulla numquam odit dignissimos sapiente vel inventore quam est magni molestias facere ullam laudantium eaque?'
+        header.appendChild(p)
+
+        const section = document.createElement('section')
+        section.id = 'rinnakkain'
+        body.appendChild(section)
+        section.style.display = "flex"
+
+
+        const p1 = document.createElement('p')
+        p1.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate veritatis, earum perferendis aut sunt adipisci sit minus fuga, vitae itaque quas repellat numquam accusantium ad, at sint id. Dolorem, minima.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate veritatis, earum perferendis aut sunt adipisci sit minus fuga, vitae itaque quas repellat numquam accusantium ad, at sint id. Dolorem, minima.'
+        section.appendChild(p1)
+
+        const figure = document.createElement('figure')
+        figure.id = 'kuvanpaikka'
+        section.appendChild(figure)
+        const img = document.createElement('img')
+        img.src = 'image/javascript.gif'
+        figure.appendChild(img)
+
+
+        const footer = document.createElement('footer')
+        const p2 = document.createElement('p')
+        p2.innerHTML = '@2019 Roya Mousavipour'
+        body.appendChild(footer).appendChild(p2)
+        body.style.fontSize = "2rem"
+
+
+
+    </script>
+
+</body>
+
+</html>
