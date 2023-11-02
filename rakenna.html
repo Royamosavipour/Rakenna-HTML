@@ -17,26 +17,38 @@
         const body = document.querySelector('body')
         const header = document.createElement('header')
         header.className = 'ylatunniste'
+        header.id='rinnakkain2'
         body.appendChild(header)
+
+
+        
+
+
 
         const h1 = document.createElement('h1')
         h1.innerHTML = 'Tämä on artikkein otsikko'
+        h1.style.marginTop='1px'
         header.appendChild(h1)
+
+
+
 
         const p = document.createElement('p')
         p.innerHTML = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad natus, voluptate nam blanditiis praesentium laboriosam nulla numquam odit dignissimos sapiente vel inventore quam est magni molestias facere ullam laudantium eaque?'
+        p.style.fontSize='20px'
         header.appendChild(p)
+
 
         const section = document.createElement('section')
         section.id = 'rinnakkain'
         body.appendChild(section)
         section.style.display = "flex"
-        section.style.border='1px'
+        section.id="rinnakkain"
 
 
         const p1 = document.createElement('p')
         p1.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate veritatis, earum perferendis aut sunt adipisci sit minus fuga, vitae itaque quas repellat numquam accusantium ad, at sint id. Dolorem, minima.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate veritatis, earum perferendis aut sunt adipisci sit minus fuga, vitae itaque quas repellat numquam accusantium ad, at sint id. Dolorem, minima.'
-        p1.style.fontSize='20px'
+        p1.style.fontSize='25px'
         section.appendChild(p1)
 
         const figure = document.createElement('figure')

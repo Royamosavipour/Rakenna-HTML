@@ -2,3 +2,18 @@
     display: flex;
     
 }
+
+#rinnakkain {
+
+    padding: 0.5rem;
+    display: flex;
+    border: dotted 2px black;
+}
+
+#rinnakkain2{
+    border: dotted 2px black;
+    padding:5px;
+
+}
+
+
